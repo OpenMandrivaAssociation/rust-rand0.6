@@ -1,0 +1,21 @@
+--- rand-0.6.5/Cargo.toml	1970-01-01T00:00:00+00:00
++++ rand-0.6.5/Cargo.toml	2020-01-15T19:09:00.441612+00:00
+@@ -65,7 +65,7 @@
+ [dev-dependencies.rand_xoshiro]
+ version = "0.1"
+ [build-dependencies.autocfg]
+-version = "0.1"
++version = "1"
+ 
+ [features]
+ alloc = ["rand_core/alloc"]
+@@ -80,9 +80,6 @@
+ [target."cfg(unix)".dependencies.libc]
+ version = "0.2"
+ default-features = false
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["minwindef", "ntsecapi", "profileapi", "winnt"]
+ [badges.appveyor]
+ repository = "rust-random/rand"
+ 
